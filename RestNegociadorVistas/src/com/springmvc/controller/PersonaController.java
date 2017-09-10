@@ -21,7 +21,7 @@ public class PersonaController {
 		return persona;
 	}
 	
-	@RequestMapping( value = "/{id}", method=RequestMethod.GET,  produces= MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping( value = "/{id}", method=RequestMethod.GET, produces= MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<?> obtenerPersonaById(@PathVariable int id){
 		HttpStatus status;
 		Persona persona = setPersonasDao();
@@ -39,7 +39,7 @@ public class PersonaController {
 		Persona persona = new Persona();
 		persona.setApellido("Martinez");
 		persona.setNombre("Fabio");
-		return null;
+		return persona;
 	}
 	
 	
